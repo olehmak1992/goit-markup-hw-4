@@ -98,7 +98,24 @@ img {
 }
 
 .card-desc-wrapper {
-  padding: 32px 0;
+  padding: 32px 16px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: #31d0aa;
 }
 
 /* #endregion */
@@ -178,7 +195,14 @@ img {
 .section-promo {
   background-color: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/hero/people-office.jpg);
+  max-width: 1440px;
 }
+
 .page-title {
   font-weight: 700;
   font-size: 56px;
@@ -226,6 +250,18 @@ img {
   width: calc((100% - 24px) / 3);
 }
 
+.benefits-icon-wrapper {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* #endregion */
 
 /* #region Team */
@@ -256,6 +292,24 @@ img {
 
 .team-desc {
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.socials-list {
+  display: flex;
+  gap: 24px;
+}
+
+.socials-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-shrink: 0;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px; */
 }
 
 /* #endregion */
@@ -298,6 +352,15 @@ img {
   padding: 100px 0;
 }
 
+.page-footer .container {
+  display: flex;
+}
+
+.footer-logo-wrapper {
+  max-width: 264px;
+  margin-right: 120px;
+}
+
 .page-footer .part {
   color: #f4f4fd;
 }
@@ -311,7 +374,19 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 264px;
+  /* max-width: 264px; */
+}
+
+.footer-socials-text {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.page-footer .socials-list {
+  gap: 16px;
 }
 
 /* #endregion */
