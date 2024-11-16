@@ -99,7 +99,7 @@ img {
 }
 
 .card-desc-wrapper {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .socials-link {
@@ -115,12 +115,18 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.socials-icon {
+  fill: #f4f4fd;
+}
+
 /* #endregion */
 
 /* #region Header */
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header .container {
@@ -162,6 +168,10 @@ img {
 
 .nav-link:hover,
 .nav-link:focus {
+  color: #404bbf;
+}
+
+.nav-link.active {
   color: #404bbf;
 }
 
@@ -316,6 +326,7 @@ img {
 .socials-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .socials-item {
@@ -405,6 +416,7 @@ img {
 
 .page-footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-wrapper {
